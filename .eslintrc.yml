@@ -1,0 +1,32 @@
+env:
+  browser: true
+  es6: true
+extends:
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:import/typescript
+  - airbnb-typescript/base
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  project: './tsconfig.json'
+plugins:
+  - '@typescript-eslint'
+  - import
+settings:
+  import/extensions:
+    - .js
+    - .ts
+rules:
+  no-use-before-define: off
+  react/no-typos: off
+  class-methods-use-this: off
+  "@typescript-eslint/no-use-before-define":
+    - error
+  import/extensions: [error, ignorePackages, {js: never, ts: never}]
+  "@typescript-eslint/no-empty-interface": off
