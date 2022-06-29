@@ -24,5 +24,5 @@ After bootstrapping you can deploy the infrastructure
 This is the architecture for implementing the [Transactional Outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html), 
 applying [Transaction Log Tailing](https://microservices.io/patterns/data/transaction-log-tailing.html) for event relay, using AWS
 
-<img src="./images/transaction%20outbox.png" width="80%"/>
+<img src="./images/transaction_outbox.png" width="80%"/>
 
